@@ -5,5 +5,6 @@
 
 ## Screenshot
 
-![landingpage](https://github.com/yudthadtyaaa/ScreenShoot_framework/blob/main/POSTTEST1/landingpage.png) <!-- Tambahkan link atau path screenshot website Anda -->
-
+![landingpage](https://github.com/yudthadtyaaa/ScreenShoot_framework/blob/main/POSTTEST1/landingpage.png) 
+![aboutmepage](https://github.com/yudthadtyaaa/ScreenShoot_framework/blob/main/POSTTEST1/aboutmepage.png) 
+![contactpage](https://github.com/yudthadtyaaa/ScreenShoot_framework/blob/main/POSTTEST1/contactpage.png) 
