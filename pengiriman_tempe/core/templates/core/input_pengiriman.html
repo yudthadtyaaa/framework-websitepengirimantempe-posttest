@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Input Data Pengiriman</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="pesanan" class="form-label">Pesanan</label>
+            {{ form.pesanan|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="status_pengiriman" class="form-label">Status Pengiriman</label>
+            {{ form.status_pengiriman|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="tanggal_pengiriman" class="form-label">Tanggal Pengiriman</label>
+            {{ form.tanggal_pengiriman|as_widget:class="form-control" }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

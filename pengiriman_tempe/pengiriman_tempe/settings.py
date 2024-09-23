@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
+    'django_seed',
 ]
 
 MIDDLEWARE = [
@@ -74,10 +75,21 @@ WSGI_APPLICATION = 'pengiriman_tempe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'pengiriman_tempe',   # Nama database di phpMyAdmin
+        'USER': 'root',                # User default di XAMPP
+        'PASSWORD': '',                # Biasanya kosong di XAMPP
+        'HOST': '127.0.0.1',           # Localhost
+        'PORT': '3306',                # Port default MySQL
     }
 }
 
