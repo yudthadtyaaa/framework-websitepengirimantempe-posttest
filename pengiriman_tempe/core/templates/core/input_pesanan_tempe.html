@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Input Pesanan Tempe</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="pengguna" class="form-label">Pengguna</label>
+            {{ form.pengguna|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="tempe" class="form-label">Tempe</label>
+            {{ form.tempe|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            {{ form.jumlah|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="alamat_pengiriman" class="form-label">Alamat Pengiriman</label>
+            {{ form.alamat_pengiriman|as_widget:class="form-control" }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

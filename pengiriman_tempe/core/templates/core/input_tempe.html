@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Input Data Tempe</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="nama_tempe" class="form-label">Nama Tempe</label>
+            {{ form.nama_tempe|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="harga" class="form-label">Harga</label>
+            {{ form.harga|as_widget:class="form-control" }}
+        </div>
+        <div class="mb-3">
+            <label for="deskripsi" class="form-label">Deskripsi</label>
+            {{ form.deskripsi|as_widget:class="form-control" }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
